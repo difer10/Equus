@@ -1,0 +1,12 @@
+C:\Equus\Equus.App\Equus.App.Dominio\bin\Debug\net6.0\Equus.App.Dominio.deps.json
+C:\Equus\Equus.App\Equus.App.Dominio\bin\Debug\net6.0\Equus.App.Dominio.dll
+C:\Equus\Equus.App\Equus.App.Dominio\bin\Debug\net6.0\Equus.App.Dominio.pdb
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.csproj.AssemblyReference.cache
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.AssemblyInfoInputs.cache
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.AssemblyInfo.cs
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.dll
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\refint\Equus.App.Dominio.dll
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\Equus.App.Dominio.pdb
+C:\Equus\Equus.App\Equus.App.Dominio\obj\Debug\net6.0\ref\Equus.App.Dominio.dll
