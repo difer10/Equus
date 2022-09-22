@@ -14,7 +14,7 @@ public class AppContext : DbContext
         if (!optionsBuilder.IsConfigured)
         {
             optionsBuilder
-            .UseSqlServer("Data Source=(localdb)\\ MSSQLLocalDB;Initial Catalog= EquusData");
+            .UseSqlServer("Data Source=(localdb)\\ MSSQLLocalDB;Initial Catalog= Equus");
         }
     }
 }

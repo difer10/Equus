@@ -26,7 +26,6 @@ C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\Microsoft.IdentityModel.Pr
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -37,13 +36,9 @@ C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\System.Windows.Extensions.
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Equus\Equus.App\Equus.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

@@ -7,26 +7,30 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace Equus.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220902190346_Inicial")]
+    [Migration("20220921235638_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Equus.App.Dominio.Animal", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdAnimal")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAnimal"), 1L, 1);
 
                     b.Property<string>("Color")
                         .IsRequired()
@@ -36,35 +40,31 @@ namespace Equus.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Historia_ClinicaId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PropietarioIdPersona")
+                        .HasColumnType("int");
 
                     b.Property<string>("Raza")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VeterinarioId")
-                        .HasColumnType("int");
+                    b.HasKey("IdAnimal");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("Historia_ClinicaId");
-
-                    b.HasIndex("VeterinarioId");
+                    b.HasIndex("PropietarioIdPersona");
 
                     b.ToTable("Animales");
                 });
 
             modelBuilder.Entity("Equus.App.Dominio.HistoriaClinica", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdHistoria")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdHistoria"), 1L, 1);
 
                     b.Property<string>("EstadoAnimo")
                         .IsRequired()
@@ -90,26 +90,30 @@ namespace Equus.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VeterinarioDesignadoId")
+                    b.Property<int>("VeterinarioDesignadoIdPersona")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdHistoria");
 
-                    b.HasIndex("VeterinarioDesignadoId");
+                    b.HasIndex("VeterinarioDesignadoIdPersona");
 
                     b.ToTable("HistoriasClinicas");
                 });
 
             modelBuilder.Entity("Equus.App.Dominio.Persona", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdPersona")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPersona"), 1L, 1);
 
                     b.Property<string>("Apellidos")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Cedula")
+                        .HasColumnType("int");
 
                     b.Property<string>("CorreoElectronico")
                         .IsRequired()
@@ -131,7 +135,7 @@ namespace Equus.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdPersona");
 
                     b.ToTable("Personas");
 
@@ -142,10 +146,9 @@ namespace Equus.App.Persistencia.Migrations
                 {
                     b.HasBaseType("Equus.App.Dominio.Persona");
 
-                    b.Property<int?>("AnimalId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("AnimalId");
+                    b.Property<string>("NombreHacienda")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Propietario");
                 });
@@ -163,35 +166,25 @@ namespace Equus.App.Persistencia.Migrations
 
             modelBuilder.Entity("Equus.App.Dominio.Animal", b =>
                 {
-                    b.HasOne("Equus.App.Dominio.HistoriaClinica", "Historia_Clinica")
-                        .WithMany()
-                        .HasForeignKey("Historia_ClinicaId");
-
-                    b.HasOne("Equus.App.Dominio.Veterinario", "Veterinario")
-                        .WithMany()
-                        .HasForeignKey("VeterinarioId");
-
-                    b.Navigation("Historia_Clinica");
-
-                    b.Navigation("Veterinario");
+                    b.HasOne("Equus.App.Dominio.Propietario", null)
+                        .WithMany("Animales")
+                        .HasForeignKey("PropietarioIdPersona");
                 });
 
             modelBuilder.Entity("Equus.App.Dominio.HistoriaClinica", b =>
                 {
                     b.HasOne("Equus.App.Dominio.Veterinario", "VeterinarioDesignado")
                         .WithMany()
-                        .HasForeignKey("VeterinarioDesignadoId");
+                        .HasForeignKey("VeterinarioDesignadoIdPersona")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("VeterinarioDesignado");
                 });
 
             modelBuilder.Entity("Equus.App.Dominio.Propietario", b =>
                 {
-                    b.HasOne("Equus.App.Dominio.Animal", "Animal")
-                        .WithMany()
-                        .HasForeignKey("AnimalId");
-
-                    b.Navigation("Animal");
+                    b.Navigation("Animales");
                 });
 #pragma warning restore 612, 618
         }

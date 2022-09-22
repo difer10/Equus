@@ -1,8 +1,10 @@
+using System.ComponentModel.DataAnnotations;
 namespace Equus.App.Dominio;
 
 public class HistoriaClinica
 {
-    public int Id { get; set; }
+    [Key]
+    public int IdHistoria { get; set; }
     public string Temperatura { get; set; }
     public float Peso { get; set; }
     public float FrecuenciaRespiratoria { get; set; }

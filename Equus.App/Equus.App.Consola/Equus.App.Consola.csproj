@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Equus.App.Persistencia\Equus.App.Persistencia.csproj" />
+    <ProjectReference Include="..\Equus.App.Dominio\Equus.App.Dominio.csproj" />
   </ItemGroup>
 
 </Project>
