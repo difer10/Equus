@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Equus.App.Presentacion
+build_property.RootNamespace = Equus.App.Presentacion
+build_property.ProjectDir = C:\Equus\Equus.App\Equus.App.Presentacion\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Equus\Equus.App\Equus.App.Presentacion
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/Animal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xBbmltYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/Consulta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xDb25zdWx0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/HistoriaClinica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xIaXN0b3JpYUNsaW5pY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/listas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xsaXN0YXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/Propietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xQcm9waWV0YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Saludos/Veterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsdWRvc1xWZXRlcmluYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7k4lkhp28i

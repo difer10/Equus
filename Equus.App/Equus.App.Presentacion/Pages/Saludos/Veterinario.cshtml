@@ -1,0 +1,39 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.listasModel
+@{
+}
+<h1>Formulario de registro</h1>
+
+<form action="" method="get">
+    <fieldset>
+        <legend class="text-center header">Datos del Veterinario</legend>
+        <p>
+            Cedula: <input type="text"  autofocus required maxlength="13" />
+        </p>
+        <p>
+            Targeta Profesional: <input type="text" name="name_control" autofocus required maxlength="20" />
+        </p>
+        <p>
+            Nombre: <input type="text" name="name_control" autofocus required maxlength="50" />
+        </p>
+
+        <p>
+            Apellidos: <input type="text" name="name_control" autofocus required maxlength="50" />
+        </p>
+
+        <p>
+            Sexo: <input type="radio" name="sexo" value="h" /> hombre <input type="radio" name="sexo" value="m" />
+            mujer
+        </p>
+
+        <p>
+            Correo: <input type="email" name="email_control" required />
+        </p>
+        <p>
+            Teléfono: <input type="tel" name="tel_control" />
+        </p>
+        <p>
+            <input type="submit" value="Guardar" />
+        </p>
+    </fieldset>
+</form>

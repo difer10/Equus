@@ -1,0 +1,20 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.listasModel
+@{
+}
+<h1>Consulta del Animal</h1>
+
+<form action="" method="get">
+    <fieldset>
+        <legend class="text-center header">Consulta del Animal</legend>
+        <p>
+            Desea consultar por: <input type="radio" name="busqueda" value="h" required/> id del animal <input type="radio" name="busqueda" value="m" required />
+            CC del Dueño  
+        </p>
+        <p>
+            <input type="text" name="name_control" autofocus required maxlength="50" />
+            <input type="button" value="Buscar" />
+        </p>
+       
+    </fieldset>
+</form>

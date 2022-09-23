@@ -1,0 +1,53 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.listasModel
+@{
+}
+<h1>Formulario de registro</h1>
+
+<form action="" method="get">
+    <fieldset>
+        <legend class="text-center header">Historial del Animal</legend>
+        <p>
+            CC del Propietario: <input type="text" autofocus required maxlength="13" />
+        </p>
+        <p>
+            Nombre Del Animal: <input type="text"  required maxlength="13" />
+        </p>
+        <p>
+            Temperatura Grado Celsius: <input type="text" required maxlength="3" />
+        </p>
+        <p>
+            Peso Kg: <input type="text" required maxlength="5" />
+        </p>
+        <p>
+            Frecuencia Respiratoria: <input type="text" required maxlength="5" />
+        </p>
+        <p>
+            Frecuencia Cardiaca: <input type="text" required maxlength="5" />
+        </p>
+        <p>
+            Estado de Animo: <input type="text" required maxlength="20" />
+        </p>
+        <p>
+            Fecha de visita: <input type="date" name="date_control" autofocus required />
+        </p>
+        <p>
+            Nombre del Veterinario: <input type="text" name="name_control" maxlength="50" />
+        </p>
+        <p>
+            Diagnostico: <input type="text" maxlength="50" />
+        </p>
+        <div class="form-group">
+            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+            <div class="col-md-8">
+                <textarea class="form-control" id="message" name="message"
+                    placeholder="Aqui puede escribir la recomendacion a tener en cuenta para el animal."
+                    rows="7">
+                </textarea>
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Guardar" />
+        </p>
+    </fieldset>
+</form>
