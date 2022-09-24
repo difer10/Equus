@@ -1,0 +1,63 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.DetalleVeterinarioModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <h2>Datos Detallados del Veterinario</h2>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Id Persona: @Model.veterinario.IdPersona
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Cedula: @Model.veterinario.Cedula
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Nombres: @Model.veterinario.Nombre
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Apellidos: @Model.veterinario.Apellidos
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Telefono: @Model.veterinario.Telefono
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Direccion: @Model.veterinario.Direccion
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Correo Electronico: @Model.veterinario.CorreoElectronico
+                </div>
+            </tr>
+            <br>
+            <tr>
+                <div>
+                    Tarjeta Profesional:@Model.veterinario.TarjetaProfesional
+                </div>
+            </tr>
+            <br>
+        </table>
+    </div>
+</div>
+<a asp-page="./ListaVeterinarios" class="btn-default">Volver a la lista de Veterinarios</a>

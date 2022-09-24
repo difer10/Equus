@@ -17,14 +17,14 @@
         <td>@animal.Color</td>
         
         <td>
-        <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-idpropietario="@animal.IdAnimal">Detalles
+        <a class="btn btn-primary table-btn" asp-page="./DetalleAnimal" asp-route-idAnimal="@animal.IdAnimal">Detalles
              <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
              </a>
         </td>
      
         <td><div class="btn-group pl-5 pr-5" role="group" aria-label="Basic mixed styles example">
-            <a class="btn btn-warning d-inline" asp-area="" asp-page="./Edit" asp-route-idpropietario="@animal.IdAnimal"><i class="fas fa-edit" ></i> Editar</a>
-            <a class="btn btn-danger d-inline" asp-area="" asp-page="./Eliminar" asp-route-idpropietario="@animal.IdAnimal"><i class="fas fa-trash-alt"></i> Eliminar</a> 
+            <a class="btn btn-warning d-inline" asp-area="" asp-page="./EditarAnimal" asp-route-idAnimal="@animal.IdAnimal"><i class="fas fa-edit" ></i> Editar</a>
+            <a class="btn btn-danger d-inline" asp-area="" asp-page="./BorrarAnimal" asp-route-idAnimal="@animal.IdAnimal"><i class="fas fa-trash-alt"></i> Eliminar</a> 
         </div></td>
 
     </tr>  

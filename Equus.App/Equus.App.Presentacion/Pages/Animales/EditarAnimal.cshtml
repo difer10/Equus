@@ -1,0 +1,39 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.EditarAnimalModel
+@{
+}
+
+<h2>Editar datos del Animal</h2>
+<form method="post">
+    <input type="hidden" asp-for="animal.IdAnimal"/>
+    <div class="form-grup">
+        <label asp-for="animal.IdAnimal"></label>
+        <input asp-for="animal.IdAnimal" class="form-control">
+        <span class="text-danger" asp-validation-for="animal.IdAnimal"></span>
+    </div>
+     <div class="form-grup">
+        <label asp-for="animal.Nombre"></label>
+        <input asp-for="animal.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="animal.Nombre"></span>
+    </div>
+     <div class="form-grup">
+        <label asp-for="animal.Color"></label>
+        <input asp-for="animal.Color" class="form-control">
+        <span class="text-danger" asp-validation-for="animal.Color"></span>
+    </div>
+     <div class="form-grup">
+        <label asp-for="animal.Especie"></label>
+        <input asp-for="animal.Especie" class="form-control">
+        <span class="text-danger" asp-validation-for="animal.Especie"></span>
+    </div>
+     <div class="form-grup">
+        <label asp-for="animal.Raza"></label>
+        <input asp-for="animal.Raza" class="form-control">
+        <span class="text-danger" asp-validation-for="animal.Raza"></span>
+    </div>
+     
+<button type="submit" class="btn btn-primary">Guardar</button><br>
+<a asp-page="./ListaAnimals" class="btn-default">Volver a la lista de Animals</a>
+
+</form>
+

@@ -1,0 +1,91 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.IngresarVeterinarioModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="text-info">
+                <h1>Ingresar un Veterinario</h1>
+            </div>
+
+            <form method="post">
+                <table class="table">
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Veterinario.Cedula" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.Cedula" class="from-control" />
+                                <span asp-validation-for="Veterinario.Cedula" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div>
+                            <td><label asp-for="Veterinario.Nombre" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.Nombre" class="from-control" />
+                                <span asp-validation-for="Veterinario.Nombre" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Veterinario.Apellidos" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.Apellidos" class="from-control" />
+                                <span asp-validation-for="Veterinario.Apellidos" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td> <label asp-for="Veterinario.Direccion" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.Direccion" class="from-control" />
+                                <span asp-validation-for="Veterinario.Direccion" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Veterinario.Telefono" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.Telefono" class="from-control" />
+                                <span asp-validation-for="Veterinario.Telefono" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Veterinario.CorreoElectronico" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.CorreoElectronico" class="from-control" />
+                                <span asp-validation-for="Veterinario.CorreoElectronico" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td> <label asp-for="Veterinario.TarjetaProfesional" class="from-label"></label></td>
+                            <td><input asp-for="Veterinario.TarjetaProfesional" class="from-control" />
+                                <span asp-validation-for="Veterinario.TarjetaProfesional" class="text-danger"></span>
+                            </td>
+                            <br>
+                        </div>
+                    </tr>
+                    <br>
+
+                </table>
+                <button type="submit" class="btn btn-primary">Guardar Veterinario</button>
+            </form>
+
+        </div>
+    </div>
+</div>
