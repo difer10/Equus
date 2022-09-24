@@ -1,0 +1,34 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.ListaAnimalModel
+@{
+}
+<h1>listado de Animales </h1>
+
+<table class="table">
+    <h2>estan</h2>
+    
+    
+    @foreach (var animal in Model.Animal)
+    {
+      
+      <tr>
+      
+        <td>@animal.Nombre</td>
+        <td>@animal.Color</td>
+        
+        <td>
+        <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-idpropietario="@animal.IdAnimal">Detalles
+             <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+             </a>
+        </td>
+     
+        <td><div class="btn-group pl-5 pr-5" role="group" aria-label="Basic mixed styles example">
+            <a class="btn btn-warning d-inline" asp-area="" asp-page="./Edit" asp-route-idpropietario="@animal.IdAnimal"><i class="fas fa-edit" ></i> Editar</a>
+            <a class="btn btn-danger d-inline" asp-area="" asp-page="./Eliminar" asp-route-idpropietario="@animal.IdAnimal"><i class="fas fa-trash-alt"></i> Eliminar</a> 
+        </div></td>
+
+    </tr>  
+    }
+
+</table>
+<a asp-page=".\IngresarAnimal" class="btn btn-primary">Adicionar Animal</a>
