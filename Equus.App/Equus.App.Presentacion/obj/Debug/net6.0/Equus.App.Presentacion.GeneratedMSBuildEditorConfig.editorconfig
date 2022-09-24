@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5pbWFsZXNcRWRpdGFyQW5pbWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Animales/IngresarAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5pbWFsZXNcSW5ncmVzYXJBbmltYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Animales/ListaAnimal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5pbWFsZXNcTGlzdGFBbmltYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,8 +43,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/NoFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm9Gb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Propietarios/BorrarPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvcGlldGFyaW9zXEJvcnJhclByb3BpZXRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Propietarios/DetallePropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvcGlldGFyaW9zXERldGFsbGVQcm9waWV0YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Propietarios/EditarPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvcGlldGFyaW9zXEVkaXRhclByb3BpZXRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Propietarios/IngresarPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvcGlldGFyaW9zXEluZ3Jlc2FyUHJvcGlldGFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Propietarios/ListaPropietarios.cshtml]
@@ -67,8 +91,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Veterinarios/BorrarVeterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmV0ZXJpbmFyaW9zXEJvcnJhclZldGVyaW5hcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Veterinarios/DetalleVeterinario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmV0ZXJpbmFyaW9zXERldGFsbGVWZXRlcmluYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Veterinarios/EditarVeterinario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmV0ZXJpbmFyaW9zXEVkaXRhclZldGVyaW5hcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Equus/Equus.App/Equus.App.Presentacion/Pages/Veterinarios/IngresarVeterinario.cshtml]

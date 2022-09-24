@@ -6,11 +6,6 @@
 <h2>Editar datos del Animal</h2>
 <form method="post">
     <input type="hidden" asp-for="animal.IdAnimal"/>
-    <div class="form-grup">
-        <label asp-for="animal.IdAnimal"></label>
-        <input asp-for="animal.IdAnimal" class="form-control">
-        <span class="text-danger" asp-validation-for="animal.IdAnimal"></span>
-    </div>
      <div class="form-grup">
         <label asp-for="animal.Nombre"></label>
         <input asp-for="animal.Nombre" class="form-control">
@@ -32,8 +27,8 @@
         <span class="text-danger" asp-validation-for="animal.Raza"></span>
     </div>
      
-<button type="submit" class="btn btn-primary">Guardar</button><br>
-<a asp-page="./ListaAnimals" class="btn-default">Volver a la lista de Animals</a>
+<button type="submit" class="btn btn-primary">Actualizar</button><br>
+<a asp-page="./ListaAnimal" class="btn-default">Volver a la lista de Animales</a>
 
 </form>
 

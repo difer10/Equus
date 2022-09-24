@@ -17,14 +17,14 @@
         <td>@propietario.Apellidos</td>
         
         <td>
-        <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-idpropietario="@propietario.IdPersona">Detalles
+        <a class="btn btn-primary table-btn" asp-page="./DetallePropietario" asp-route-idpropietario="@propietario.IdPersona">Detalles
              <i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
              </a>
         </td>
      
         <td><div class="btn-group pl-5 pr-5" role="group" aria-label="Basic mixed styles example">
-            <a class="btn btn-warning d-inline" asp-area="" asp-page="./Edit" asp-route-idpropietario="@propietario.IdPersona"><i class="fas fa-edit" ></i> Editar</a>
-            <a class="btn btn-danger d-inline" asp-area="" asp-page="./Eliminar" asp-route-idpropietario="@propietario.IdPersona"><i class="fas fa-trash-alt"></i> Eliminar</a> 
+            <a class="btn btn-warning d-inline" asp-area="" asp-page="./EditarPropietario" asp-route-idpropietario="@propietario.IdPersona"><i class="fas fa-edit" ></i> Editar</a>
+            <a class="btn btn-danger d-inline" asp-area="" asp-page="./BorrarPropietario" asp-route-idpropietario="@propietario.IdPersona"><i class="fas fa-trash-alt"></i> Eliminar</a> 
         </div></td>
 
     </tr>  

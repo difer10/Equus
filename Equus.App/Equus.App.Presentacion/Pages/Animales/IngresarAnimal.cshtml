@@ -1,0 +1,62 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.IngresarAnimalModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="text-info">
+                <h1>Ingresar un Animal</h1>
+            </div>
+
+            <form method="post">
+                <table class="table">
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Animal.Nombre" class="from-label"></label></td>
+                            <td><input asp-for="Animal.Nombre" class="from-control" />
+                                <span asp-validation-for="Animal.Nombre" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div>
+                            <td><label asp-for="Animal.Color" class="from-label"></label></td>
+                            <td><input asp-for="Animal.Color" class="from-control" />
+                                <span asp-validation-for="Animal.Color" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td><label asp-for="Animal.Especie" class="from-label"></label></td>
+                            <td><input asp-for="Animal.Especie" class="from-control" />
+                                <span asp-validation-for="Animal.Especie" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    <tr>
+                        <div calss="mb-3">
+                            <td> <label asp-for="Animal.Raza" class="from-label"></label></td>
+                            <td><input asp-for="Animal.Raza" class="from-control" />
+                                <span asp-validation-for="Animal.Raza" class="text-danger"></span>
+                            </td>
+
+                        </div>
+                    </tr>
+                    <br>
+                    
+
+                </table>
+                <button type="submit" class="btn btn-primary">Guardar Animal</button>
+            </form>
+
+        </div>
+    </div>
+</div>

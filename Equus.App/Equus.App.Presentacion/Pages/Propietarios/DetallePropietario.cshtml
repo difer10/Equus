@@ -1,0 +1,41 @@
+﻿@page
+@model Equus.App.Presentacion.Pages.DetallePropietarioModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <h2>Datos del Propietario</h2>
+            </tr>
+            <br>
+            <tr>
+<div>
+    Id Propietario: @Model.propietario.IdPersona
+
+</div>
+<div>
+    Cedula: @Model.propietario.Cedula
+
+</div>
+<div>
+    Nombre: @Model.propietario.Nombre
+
+</div>
+<div>
+    Apellidos: @Model.propietario.Apellidos
+
+</div>
+<div>
+    Direccion: @Model.propietario.Direccion
+
+</div>
+<div>
+    Telefono: @Model.propietario.Telefono
+    
+</div>
+<div>
+    Correo Electronico: @Model.propietario.CorreoElectronico
+    
+</div>
+<a asp-page="./ListaPropietarios" class="btn-default">Volver a la lista de Propietarios</a>
